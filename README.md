@@ -10,46 +10,15 @@ This project builds a **strategy planning + KPI tracking** workflow by combining
 This project expects the Statista Market Insights export you provided:
 - `data/raw/mi_consumer_smart-home_united-states_usd_en_with_kmis_*.csv`
 
-> ⚠️ Do not commit licensed raw data to GitHub. Keep it in `data/raw/` (gitignored).
+## Visual Analysis
 
-## Quick start
-```bash
-python -m venv .venv
-source .venv/bin/activate   # mac/linux
-pip install -r requirements.txt
-```
+### Revenue vs Household Penetration
+![Revenue vs Penetration](reports/figures/revenue_vs_penetration.png)
 
-1) Put your CSV into `data/raw/`  
-2) Run the transformation:
-```bash
-python -m src.load_transform --input "data/raw/<your-file>.csv" --out "data/processed/metrics_long.csv"
-```
+Revenue continues to increase alongside rapid household penetration gains,
+while growth rates gradually decelerate—indicating a transition toward a more
+mature adoption phase with increasing planning complexity.
 
-3) Open the notebook:
-- `notebooks/01_eda_kpi.ipynb`
+**Planning implication:** Near-term growth remains penetration-driven, but
+mid-term strategy should increasingly focus on value expansion and efficiency.
 
-## What you’ll deliver (GitHub-ready)
-- Clean long-format dataset (`data/processed/metrics_long.csv`)
-- KPI table + charts (Revenue trend, YoY growth, Penetration)
-- A short “Strategic Insights” section (3–5 bullets) translating metrics → actions
-
-## Project structure
-```
-lg-strategic-planning-insights/
-  data/
-    raw/           # (gitignored)
-    processed/     # (gitignored)
-  src/
-    load_transform.py
-    kpi.py
-  notebooks/
-    01_eda_kpi.ipynb
-  reports/
-    figures/
-  docs/
-    data_dictionary.md
-```
-=======
-
-
->>>>>>> 1c1d4f6292e632fd825d78e65e784dc72a0dd57d
