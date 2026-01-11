@@ -1,0 +1,16 @@
+# Data (likely licensed / large)
+data/raw/
+data/processed/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
