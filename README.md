@@ -1,3 +1,4 @@
+
 # Strategic Planning & Insights Project (Smart Appliances, U.S.)
 
 This project builds a **strategy planning + KPI tracking** workflow by combining multi-dimensional business metrics into a unified dataset and generating **executive-ready insights**:
@@ -48,3 +49,7 @@ lg-strategic-planning-insights/
   docs/
     data_dictionary.md
 ```
+=======
+
+
+>>>>>>> 1c1d4f6292e632fd825d78e65e784dc72a0dd57d
